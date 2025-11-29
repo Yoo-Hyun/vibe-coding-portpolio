@@ -1,11 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>김밥나라 - 맛있는 음식이 있어 행복한 곳</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+  <!-- 헤더 / 네비게이션 -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo">
+        <span class="logo-icon">🍙</span>
+        <span class="logo-text">김밥나라</span>
+      </div>
+      <button class="mobile-menu-btn" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="#">김밥나라 안내</a></li>
+          <li><a href="#">체인정보 안내</a></li>
+          <li><a href="#">김밥나라 메뉴</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 메인 콘텐츠 -->
+  <main class="main-content">
+    <!-- 히어로 섹션 -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-left">
+          <div class="hero-text">
+            <p class="hero-subtitle">맛있는 음식이 있어 <span class="highlight">행복한 곳</span></p>
+            <h1 class="hero-title">김밥나라</h1>
+          </div>
+          <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?w=500&h=350&fit=crop" alt="맛있는 김밥">
+            <div class="image-overlay"></div>
+          </div>
+        </div>
+        
+        <div class="hero-right">
+          <!-- 뉴스 섹션 -->
+          <div class="news-section">
+            <div class="section-header">
+              <h2>NEWS</h2>
+            </div>
+            <ul class="news-list">
+              <li>
+                <span class="news-icon">✓</span>
+                <a href="#">김밥나라에 이은 세번째 성공 신화!! 간장게장...</a>
+                <span class="news-date">2013/11/14</span>
+              </li>
+              <li>
+                <span class="news-icon">✓</span>
+                <a href="#">2013. 10월 안성시 금광점 오픈</a>
+                <span class="news-date">2013/11/14</span>
+              </li>
+              <li>
+                <span class="news-icon">✓</span>
+                <a href="#">2013.9월 아산시 탕정2호점 오픈</a>
+                <span class="news-date">2013/01/09</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- 추천메뉴 섹션 -->
+          <div class="menu-section">
+            <div class="section-header">
+              <h2><span class="brand">김밥나라</span> 추천메뉴</h2>
+              <a href="#" class="more-link">MORE</a>
+            </div>
+            <div class="menu-cards">
+              <div class="menu-card">
+                <div class="menu-card-image">
+                  <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=200&h=150&fit=crop" alt="우동">
+                </div>
+                <div class="menu-card-content">
+                  <h3>우동</h3>
+                  <p>시원한 맛이 일품인 특별한 우동 레시피를</p>
+                </div>
+              </div>
+              <div class="menu-card">
+                <div class="menu-card-image">
+                  <img src="https://images.unsplash.com/photo-1604908177453-7462950a6a3b?w=200&h=150&fit=crop" alt="생선까스">
+                </div>
+                <div class="menu-card-content">
+                  <h3>생선까스</h3>
+                  <p>바삭한 튀김옷과 부드러운 생선살이 어우러진</p>
+                </div>
+              </div>
+              <div class="menu-card">
+                <div class="menu-card-image">
+                  <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=200&h=150&fit=crop" alt="낙지철판볶음밥">
+                </div>
+                <div class="menu-card-content">
+                  <h3>낙지철판볶음밥</h3>
+                  <p>매콤한 낙지와 신선한 야채가 어우러진</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 하단 정보 섹션 -->
+    <section class="info-section">
+      <div class="info-container">
+        <div class="info-box franchise">
+          <div class="info-header">
+            <h3><span class="brand">김밥나라</span> 체인정보안내</h3>
+          </div>
+          <div class="info-content">
+            <div class="franchise-list">
+              <div class="franchise-item active">
+                <span class="number">3</span>
+                <span class="label">창업상담</span>
+              </div>
+              <div class="franchise-desc">
+                <p>서울본사/경기도지사,</p>
+                <p>시공부터 운영까지</p>
+                <p>믿을 수 있는 김밥나라!</p>
+                <a href="#" class="hope-btn">HOPE ▶</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="info-box partners">
+          <div class="info-header">
+            <h3><span class="brand">김밥나라</span> 자매회사</h3>
+          </div>
+          <div class="info-content partners-content">
+            <div class="partner-logo">
+              <span class="partner-text">Ocean Story</span>
+              <span class="partner-phone">📞 080-292-9329</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2024 김밥나라. All Rights Reserved.</p>
+      <p>서울특별시 강남구 테헤란로 123 | 대표전화: 02-1234-5678</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
