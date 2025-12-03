@@ -26,6 +26,7 @@ body {
   background-color: var(--cream-bg);
   color: var(--text-dark);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 a {
@@ -144,17 +145,20 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px 20px;
+  overflow: hidden;
 }
 
 /* 히어로 섹션 */
 .hero-section {
   margin-bottom: 30px;
+  overflow: hidden;
 }
 
 .hero-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
+  overflow: hidden;
 }
 
 .hero-left {
@@ -163,6 +167,7 @@ img {
   padding: 30px;
   position: relative;
   overflow: hidden;
+  min-width: 0;
 }
 
 .hero-left::before {
@@ -234,6 +239,8 @@ img {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  overflow: hidden;
+  min-width: 0;
 }
 
 /* 섹션 헤더 */
@@ -277,6 +284,7 @@ img {
   padding: 20px;
   border-radius: 15px;
   box-shadow: var(--shadow);
+  overflow: hidden;
 }
 
 .news-list li {
@@ -323,12 +331,14 @@ img {
   border-radius: 15px;
   box-shadow: var(--shadow);
   flex: 1;
+  overflow: hidden;
 }
 
 .menu-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
+  overflow: hidden;
 }
 
 .menu-card {
@@ -541,6 +551,16 @@ img {
 }
 
 @media (max-width: 768px) {
+  /* 모바일에서 스크롤바 숨기기 */
+  body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE, Edge */
+  }
+  
+  body::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  
   .header-container {
     height: 60px;
   }
